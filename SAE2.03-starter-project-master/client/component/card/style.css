@@ -1,0 +1,38 @@
+.card-container{
+    width: max-content;
+    box-shadow: 0px 4px 12px var(--fg);
+    border-radius: 10px;
+    padding: 0rem 1rem .5rem 1rem;
+}
+
+.card{
+    padding: 1rem;
+}
+
+.card__info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card__title{
+    font-size: 3rem;
+}
+
+.card__subtitle{
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 50%;
+}
+
+.card__text{
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 50%;
+}
+
+.card__img{
+    width: 25rem;
+    border-radius: 5px;
+}

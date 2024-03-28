@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Prime Flix</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <header>
+      <button onclick="requestMovies()" class="header__filter">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="14"
+          viewBox="0 0 18 14"
+          fill="none"
+        >
+          <path
+            d="M1 1H17M1 5H17M1 9H17M1 13H17"
+            stroke="#1B1A1A"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        All
+      </button>
+    </header>
+<div class="main">
+<ul class="card__list"></ul>
+</div>
+    <section id="app">
+
+    </section>
+
+    <script type="module">
+      // on importe le composant Card
+      import { card } from "./component/card/script.js";
+      // on permet à Card d'être accessible globalement (notamment par main.js)
+      window.card = card;
+
+      // faire de même pour tous les composants que vous créez
+    </script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
